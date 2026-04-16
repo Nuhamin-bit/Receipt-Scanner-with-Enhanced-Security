@@ -47,12 +47,10 @@ python main.py --no-ocr path/to/receipt.jpg
 - Organizations can meet regulatory requirements while automating expense tracking.
 
 
-# Authors
+# Author
 
 Nuhamin Tesfay
 
-James Green
 
-Chris Duckers
 
 Supervised by: Dr. Natalia Bell, Marymount University, Spring 2026
