@@ -1,0 +1,6 @@
+flask
+gunicorn
+pillow
+pytesseract
+pycryptodome
+werkzeug
