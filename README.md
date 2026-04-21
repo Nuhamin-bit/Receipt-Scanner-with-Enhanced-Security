@@ -1,56 +1,88 @@
-### Receipt Scanner with Enhanced Security
+### Receipt Scanner — Secure Financial Intelligence System
 
-This project is an AI-powered receipt scanner with added security and privacy enhancements. It automates receipt digitization while keeping sensitive data safe for both organizations and users.
+### Overview
 
-Features
-OCR Processing: Extracts text from receipt images using Tesseract OCR.
-Image Preprocessing: Normalizes images for higher OCR accuracy.
-Text Parsing: Automatically identifies merchant, total, date, gallons, and price per gallon.
-Security & Privacy Enhancements:
-All OCR data is processed locally to minimize exposure.
-Logs are optionally encrypted with AES, and encryption keys are exchanged using Diffie-Hellman for secure key management.
-Designed to be GDPR/CCPA compliant, ensuring user trust.
-Flexible Input: Supports .jpg, .jpeg, .png, and .heic images.
-CLI & Web: Can be run as a command-line tool for testing or integrated into a web interface.
+The Receipt Scanner System is a secure, cloud-ready financial data processing platform that converts receipt images into structured, analyzable financial records.
 
-Installation
-pip install -r requirements.txt
+It integrates:
 
-**Usage**
+  - OCR (Tesseract)
+  - FastAPI backend
+  - AES-256 encryption
+  - Diffie-Hellman key exchange
+  - SQLite database
+  - Financial analytics engine
+  - Cloud deployment readiness (Render)
 
- **Command-Line Interface (CLI)**
- 
-- Basic usage
-python main.py path/to/receipt.jpg
-- Disable OCR for testing
-python main.py --no-ocr path/to/receipt.jpg
+    
+### Problem Statement
 
-**Security Improvements**
+Manual receipt tracking is:
 
-1- Local OCR Processing: Data never leaves the local environment unless explicitly stored.
+    - Slow
+    - Error-prone
+    - Unstructured
+    - Not secure
 
-2- Encrypted Logs: OCR results are encrypted using AES; keys are securely exchanged via Diffie-Hellman.
+This system automates financial data extraction and introduces security + analytics.
 
-3- Privacy Compliance: Ensures GDPR/CCPA best practices for handling user data.
+### System Architecture
 
-4- Error Handling: Invalid or corrupted receipts do not expose sensitive information.
-
-
-**Why This Matters**
-
-- For companies digitizing their processes, protecting sensitive financial data is critical. This version of the receipt scanner ensures that:
-
-- Data is secure by default.
-
-- Users can trust the application to handle receipts safely.
-
-- Organizations can meet regulatory requirements while automating expense tracking.
+  User Upload
+       ↓
+  FastAPI Endpoint
+       ↓
+  Image Preprocessing
+       ↓
+  OCR (Tesseract)
+       ↓
+  Text Parsing (Regex + Rules)
+       ↓
+  AES Encryption Layer
+       ↓
+  SQLite Database
+       ↓
+  Analytics Engine
 
 
-# Author
+### Security Features
 
+- AES-256 encryption for financial data
+- Diffie-Hellman key exchange for secure key generation
+- Secure structured logging
+- Protected database storage
+
+### API Endpoints
+
+Method	Endpoint	Description: 
+
+- POST	/upload-receipt	Upload receipt image
+- GET	/analytics/monthly	Monthly spending summary
+- GET	/analytics/merchant-summary	Spending by merchant
+- GET	/export/csv	Export financial data
+
+### Deployment
+
+- Backend: FastAPI
+- Hosting: Render
+- Database: SQLite
+- Ready for Docker containerization
+
+## Digital Transformation Impact
+
+- Converts manual receipts → automated financial system
+- Adds enterprise-grade security
+- Enables cloud accessibility
+- Provides structured financial analytics
+
+### Future Improvements
+
+- Machine learning receipt parsing
+- React dashboard UI
+- Multi-user authentication system
+- Cloud database migration 
+
+
+## Author
 Nuhamin Tesfay
 
-
-
-Supervised by: Dr. Natalia Bell, Marymount University, Spring 2026
