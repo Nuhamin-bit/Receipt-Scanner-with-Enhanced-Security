@@ -4,3 +4,10 @@ pillow
 pytesseract
 pycryptodome
 werkzeug
+fastapi
+uvicorn
+python-multipart
+pillow
+pytesseract
+sqlalchemy
+pandas
