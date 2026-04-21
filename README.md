@@ -29,9 +29,7 @@ This system automates financial data extraction and introduces security + analyt
 ### System Architecture
 
   User Upload
-  
-       ↓
-       
+       ↓   
   FastAPI Endpoint
   
        ↓
