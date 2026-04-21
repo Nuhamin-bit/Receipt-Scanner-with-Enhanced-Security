@@ -29,19 +29,33 @@ This system automates financial data extraction and introduces security + analyt
 ### System Architecture
 
   User Upload
+  
        ↓
+       
   FastAPI Endpoint
+  
        ↓
+       
   Image Preprocessing
+  
        ↓
+       
   OCR (Tesseract)
+  
        ↓
+       
   Text Parsing (Regex + Rules)
+  
        ↓
+       
   AES Encryption Layer
+  
        ↓
+       
   SQLite Database
+  
        ↓
+       
   Analytics Engine
 
 
