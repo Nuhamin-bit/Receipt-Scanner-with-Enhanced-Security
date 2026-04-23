@@ -1,13 +1,11 @@
 flask
 gunicorn
-pillow
-pytesseract
 pycryptodome
 werkzeug
+pandas
 fastapi
 uvicorn
-python-multipart
 pillow
-pytesseract
+numpy
+python-multipart
 sqlalchemy
-pandas
